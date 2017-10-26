@@ -1,0 +1,53 @@
+footer {
+  background-color: #e7e7e7;
+  min-height: 20vh;
+
+  #itemcs-ls {
+    margin: 1%;
+    border: 0.5px solid #e7e7e7;
+
+    a{
+      color: #777;
+    }
+
+    #map-site {
+      @include floats(left, 25%);
+      text-align: left;
+
+      div {
+        h3 {
+          @include relaway_h3();
+        }
+        ul {
+          padding: 0;
+          li {
+            list-style: none;
+            a {
+              font-size: 1.1em;
+            }
+          }
+        }
+      }
+    }
+
+    #xarxes-socials {
+      @include floats(left, 25%);
+      font-family: FontAwesome;
+      text-align: center;
+
+      div:not(:first-child) {
+        @include floats(left, 15%);
+        font-size: 2em;
+      }
+
+      div:first-child {
+        @include floats(left, 100%);
+        margin-bottom: 3%;
+        text-align: left;
+        h3{
+          @include relaway_h3();
+        }
+      }
+    }
+  }
+}

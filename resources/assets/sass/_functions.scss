@@ -1,0 +1,10 @@
+@mixin floats ($position, $width){
+  float: $position;
+  width: $width;
+}
+
+@mixin relaway_h3 (){
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 1.2em !important;
+  font-weight:bold !important;
+}
